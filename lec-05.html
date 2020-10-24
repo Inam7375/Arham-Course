@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Variables</title>
+    <style media="screen">
+      body {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      .mobile-div {
+        font-size: 2em;
+        height: 150px;
+        width: auto;
+        border-style: solid;
+        margin: 5px;
+        padding: 10px 0px 0px 5px;
+      }
+
+      #apple {
+        background: purple;
+      }
+
+      #samsung {
+        background: yellow;
+      }
+
+      #dell {
+        background: green;
+        height: auto;
+      }
+
+      #samsung-span {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mobile-div" id="apple" style="">
+      <p>Apple</p>
+    </div>
+    <div class="mobile-div" id="samsung">
+      <p id="samsung-txt">This is samsung division.</p>
+      <p>Samsung is amazing.</p>
+    </div>
+    <div class="mobile-div" id="dell">
+      Dell
+    </div>
+    <button type="button" id='btn1' onclick="putObject()">Place Object</button>
+    <button type="button" onclick="objValues()">Place All Values in Dell div</button>
+    <script>
+      function putObject(){
+        var human = {
+          family: 'Mamal',
+          feet: '2',
+          avgAge: 60
+        }
+        for(i in human){
+          alert(human[i]);
+        }
+      }
+
+      function objValues(){
+        var human = {
+          family: 'Mamal',
+          feet: '2',
+          avgAge: 60
+        }
+
+        for(key in human){
+          document.getElementById('dell').innerHTML += '<p>'+human[key]+'</p>';
+        }
+      }
+    </script>
+  </body>
+</html>

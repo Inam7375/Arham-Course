@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lec 02</title>
+    <link rel="stylesheet" href="lec-02.css">
+  </head>
+  <body>
+    <div class="mobile-div" id="apple" style="">
+      Apple
+    </div>
+    <div class="mobile-div" id="samsung">
+      <p id="samsung-txt">This is samsung division.</p>
+      <p>This is samsung division.</p>
+    </div>
+    <div class="mobile-div" id="dell">
+      Dell
+    </div>
+    <button type="button" id="btn1">Change Apple Color</button>
+    <button type="button" id="btn-samsung">Change width</button>
+    <button type="button" id="btn3">text change samsung</button>
+    <script>
+      document.getElementById('btn1').onclick = function(){
+        document.getElementById('apple').style.background = 'white';
+      }
+
+      document.getElementById('btn-samsung').onclick = function(){
+        document.getElementById('samsung').style.width='50%';
+      }
+
+      document.getElementById('btn3').onclick = function(){
+        document.getElementById('samsung-txt').innerHTML = 'This is apple';
+      }
+    </script>
+  </body>
+</html>

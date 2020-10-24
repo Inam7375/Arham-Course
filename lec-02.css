@@ -1,0 +1,29 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.mobile-div {
+  font-size: 2em;
+  height: 150px;
+  width: auto;
+  border-style: solid;
+  margin: 5px;
+  padding: 10px 0px 0px 5px;
+}
+
+#apple {
+  background: purple;
+}
+
+#samsung {
+  background: yellow;
+}
+
+#dell {
+  background: green;
+}
+
+#samsung-span {
+  color: blue;
+}

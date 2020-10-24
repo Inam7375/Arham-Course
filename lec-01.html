@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .arham {
+        background: yellow;
+      }
+
+      #btn2 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <button type="button" onclick="alert('Hello world')" class="arham">Button 1</button>
+    <button type="button" id="btn2" class="arham">Button 2</button>
+
+    <script>
+    //   document.getElementById('btn1').onclick = function(){
+    //    alert('Get your things right')
+    //  }
+      document.getElementById('btn2').onmouseover = function(){
+        alert('Second button clicked')
+      }
+    </script>
+  </body>
+</html>
